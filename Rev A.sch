@@ -14188,23 +14188,21 @@ grid 2.54 mm</description>
 </sheet>
 </sheets>
 <errors>
-<approved hash="104,2,91.44,66.04,IC201P,GND,V-,,,"/>
-<approved hash="113,2,71.4417,82.55,ON+,,,,,"/>
-<approved hash="113,2,80.9583,82.55,ON-,,,,,"/>
 <approved hash="113,2,7.9029,73.5288,PWR+1,,,,,"/>
 <approved hash="113,2,7.9029,60.8288,PWR+2,,,,,"/>
-<approved hash="113,2,33.3029,86.2288,PWR-1,,,,,"/>
-<approved hash="113,2,33.3029,73.5288,PWR-2,,,,,"/>
-<approved hash="113,1,77.3015,111.629,R_OUT1,,,,,"/>
-<approved hash="113,1,77.3015,96.3888,R_OUT2,,,,,"/>
-<approved hash="113,1,77.3015,-7.75123,L_OUT1,,,,,"/>
-<approved hash="113,1,77.3015,-22.9912,L_OUT2,,,,,"/>
+<approved hash="113,2,33.3029,111.629,PWR-1,,,,,"/>
+<approved hash="113,2,33.3029,98.9288,PWR-2,,,,,"/>
+<approved hash="113,1,78.9386,106.549,R_OUT101,,,,,"/>
+<approved hash="113,1,78.9386,96.3888,R_OUT102,,,,,"/>
+<approved hash="113,1,78.9386,-12.8312,L_OUT101,,,,,"/>
+<approved hash="113,1,78.9386,-22.9912,L_OUT102,,,,,"/>
 <approved hash="113,1,-81.5171,104.009,R_IN,,,,,"/>
 <approved hash="113,1,-81.5171,-15.3712,L_IN,,,,,"/>
 <approved hash="113,2,7.9029,98.9288,SWT+1,,,,,"/>
 <approved hash="113,2,7.9029,86.2288,SWT+2,,,,,"/>
-<approved hash="113,2,33.3029,60.8288,SWT-1,,,,,"/>
-<approved hash="113,2,33.3029,48.1288,SWT-2,,,,,"/>
+<approved hash="113,2,33.3029,86.2288,SWT-1,,,,,"/>
+<approved hash="113,2,33.3029,73.5288,SWT-2,,,,,"/>
+<approved hash="113,2,73.8971,81.1488,LED,,,,,"/>
 </errors>
 </schematic>
 </drawing>
