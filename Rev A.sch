@@ -16775,8 +16775,7 @@ grid 2.54 mm</description>
 <part name="Q112" library="transistor-pnp" deviceset="2N3906" device=""/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="ON+" library="led" deviceset="LED" device="SQR2X5"/>
-<part name="R201" library="rcl" deviceset="R-EU_" device="0207/10" value="2.2kΩ"/>
-<part name="GND8" library="supply1" deviceset="GND" device=""/>
+<part name="R201" library="rcl" deviceset="R-EU_" device="0207/10" value="4.7kΩ"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY5" library="supply2" deviceset="V+" device=""/>
 <part name="SUPPLY6" library="supply2" deviceset="V-" device=""/>
@@ -16784,10 +16783,6 @@ grid 2.54 mm</description>
 <part name="SUPPLY7" library="supply2" deviceset="V-" device=""/>
 <part name="SUPPLY8" library="supply2" deviceset="V+" device=""/>
 <part name="SUPPLY9" library="supply2" deviceset="V+" device=""/>
-<part name="R202" library="rcl" deviceset="R-EU_" device="0207/10" value="2.2kΩ"/>
-<part name="GND12" library="supply1" deviceset="GND" device=""/>
-<part name="ON-" library="led" deviceset="LED" device="SQR2X5"/>
-<part name="SUPPLY10" library="supply2" deviceset="V-" device=""/>
 <part name="SUPPLY11" library="supply2" deviceset="V+" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY12" library="supply2" deviceset="V-" device=""/>
@@ -16929,6 +16924,7 @@ grid 2.54 mm</description>
 <part name="SWT+1" library="adafruit" deviceset="JST_2PIN" device="-THM"/>
 <part name="SWT-1" library="adafruit" deviceset="JST_2PIN" device="-THM"/>
 <part name="SWT-2" library="adafruit" deviceset="JST_2PIN" device="-THM"/>
+<part name="SUPPLY10" library="supply2" deviceset="V-" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -17622,27 +17618,22 @@ grid 2.54 mm</description>
 <instance part="GND13" gate="1" x="60.96" y="55.88"/>
 <instance part="ON+" gate="G$1" x="71.12" y="83.82"/>
 <instance part="R201" gate="G$1" x="71.12" y="68.58" rot="R90"/>
-<instance part="GND8" gate="1" x="71.12" y="55.88"/>
 <instance part="GND3" gate="1" x="0" y="53.34"/>
-<instance part="SUPPLY5" gate="1" x="91.44" y="91.44"/>
-<instance part="SUPPLY6" gate="1" x="91.44" y="55.88"/>
+<instance part="SUPPLY5" gate="1" x="81.28" y="91.44"/>
+<instance part="SUPPLY6" gate="1" x="81.28" y="55.88"/>
 <instance part="GND6" gate="1" x="50.8" y="55.88"/>
 <instance part="SUPPLY7" gate="1" x="50.8" y="93.98" rot="R180"/>
 <instance part="SUPPLY8" gate="1" x="60.96" y="93.98"/>
 <instance part="SUPPLY9" gate="1" x="71.12" y="93.98"/>
-<instance part="R202" gate="G$1" x="81.28" y="68.58" rot="R90"/>
-<instance part="GND12" gate="1" x="81.28" y="55.88"/>
-<instance part="ON-" gate="G$1" x="81.28" y="81.28" rot="R180"/>
-<instance part="SUPPLY10" gate="1" x="81.28" y="93.98" rot="R180"/>
 <instance part="SUPPLY11" gate="1" x="-2.54" y="121.92"/>
 <instance part="GND14" gate="1" x="25.4" y="121.92" rot="R180"/>
 <instance part="SUPPLY12" gate="1" x="25.4" y="50.8"/>
-<instance part="C201" gate="G$1" x="101.6" y="76.2"/>
-<instance part="SUPPLY13" gate="1" x="101.6" y="91.44"/>
-<instance part="SUPPLY14" gate="1" x="101.6" y="55.88"/>
+<instance part="C201" gate="G$1" x="91.44" y="76.2"/>
+<instance part="SUPPLY13" gate="1" x="91.44" y="91.44"/>
+<instance part="SUPPLY14" gate="1" x="91.44" y="55.88"/>
 <instance part="C204" gate="G$1" x="60.96" y="76.2"/>
 <instance part="C203" gate="G$1" x="50.8" y="73.66" rot="R180"/>
-<instance part="IC201" gate="P" x="91.44" y="73.66"/>
+<instance part="IC201" gate="P" x="81.28" y="73.66"/>
 <instance part="F201" gate="1" x="-2.54" y="109.22" rot="R90"/>
 <instance part="F202" gate="1" x="25.4" y="63.5" rot="R90"/>
 <instance part="PWR+1" gate="G$1" x="10.16" y="76.2" rot="MR180"/>
@@ -17653,6 +17644,7 @@ grid 2.54 mm</description>
 <instance part="SWT+1" gate="G$1" x="10.16" y="88.9" rot="MR180"/>
 <instance part="SWT-1" gate="G$1" x="35.56" y="88.9" rot="MR180"/>
 <instance part="SWT-2" gate="G$1" x="35.56" y="76.2" rot="MR180"/>
+<instance part="SUPPLY10" gate="1" x="71.12" y="55.88"/>
 </instances>
 <busses>
 </busses>
@@ -17664,19 +17656,9 @@ grid 2.54 mm</description>
 <pinref part="C204" gate="G$1" pin="-"/>
 </segment>
 <segment>
-<pinref part="R201" gate="G$1" pin="1"/>
-<wire x1="71.12" y1="63.5" x2="71.12" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="GND8" gate="1" pin="GND"/>
-</segment>
-<segment>
 <wire x1="50.8" y1="71.12" x2="50.8" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 <pinref part="C203" gate="G$1" pin="+"/>
-</segment>
-<segment>
-<pinref part="R202" gate="G$1" pin="1"/>
-<wire x1="81.28" y1="63.5" x2="81.28" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="GND12" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="PWR+2" gate="G$1" pin="1"/>
@@ -17709,7 +17691,7 @@ grid 2.54 mm</description>
 <net name="V-" class="0">
 <segment>
 <pinref part="SUPPLY6" gate="1" pin="V-"/>
-<wire x1="91.44" y1="66.04" x2="91.44" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="66.04" x2="81.28" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="IC201" gate="P" pin="GND"/>
 </segment>
 <segment>
@@ -17718,25 +17700,25 @@ grid 2.54 mm</description>
 <pinref part="C203" gate="G$1" pin="-"/>
 </segment>
 <segment>
-<wire x1="81.28" y1="86.36" x2="81.28" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="ON-" gate="G$1" pin="C"/>
-<pinref part="SUPPLY10" gate="1" pin="V-"/>
-</segment>
-<segment>
 <pinref part="SUPPLY14" gate="1" pin="V-"/>
 <pinref part="C201" gate="G$1" pin="2"/>
-<wire x1="101.6" y1="58.42" x2="101.6" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="58.42" x2="91.44" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY12" gate="1" pin="V-"/>
 <pinref part="F202" gate="1" pin="1"/>
 <wire x1="25.4" y1="53.34" x2="25.4" y2="58.42" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="R201" gate="G$1" pin="1"/>
+<wire x1="71.12" y1="63.5" x2="71.12" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="SUPPLY10" gate="1" pin="V-"/>
+</segment>
 </net>
 <net name="V+" class="0">
 <segment>
 <pinref part="SUPPLY5" gate="1" pin="V+"/>
-<wire x1="91.44" y1="88.9" x2="91.44" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="88.9" x2="81.28" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="IC201" gate="P" pin="V+"/>
 </segment>
 <segment>
@@ -17752,19 +17734,12 @@ grid 2.54 mm</description>
 <segment>
 <pinref part="C201" gate="G$1" pin="1"/>
 <pinref part="SUPPLY13" gate="1" pin="V+"/>
-<wire x1="101.6" y1="78.74" x2="101.6" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="78.74" x2="91.44" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="F201" gate="1" pin="2"/>
 <pinref part="SUPPLY11" gate="1" pin="V+"/>
 <wire x1="-2.54" y1="114.3" x2="-2.54" y2="119.38" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$7" class="0">
-<segment>
-<wire x1="81.28" y1="78.74" x2="81.28" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="R202" gate="G$1" pin="2"/>
-<pinref part="ON-" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="N$43" class="0">
