@@ -17612,6 +17612,7 @@ grid 2.54 mm</description>
 </nets>
 </sheet>
 <sheet>
+<description>Power Supply</description>
 <plain>
 </plain>
 <instances>
@@ -17781,6 +17782,7 @@ grid 2.54 mm</description>
 </nets>
 </sheet>
 <sheet>
+<description>Clipping Detector</description>
 <plain>
 </plain>
 <instances>
